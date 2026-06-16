@@ -1,0 +1,164 @@
+/* =========================
+   Variables
+========================= */
+/* =========================
+   Reset
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   Base
+========================= */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #323e58;
+  color: #ffffff;
+}
+
+/* =========================
+   Navbar
+========================= */
+.custom-navbar {
+  background: #0f172a;
+  border-bottom: 1px solid #374151;
+}
+
+/* =========================
+   Hero
+========================= */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.hero .hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.hero .hero-text {
+  flex: 1;
+}
+.hero .hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero .hero-text p {
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+  color: #9ca3af;
+}
+.hero .hero-image {
+  flex: 1;
+  text-align: center;
+}
+.hero .hero-image img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #22c55e;
+}
+
+/* =========================
+   Sections
+========================= */
+.about,
+.skills,
+.social {
+  padding: 80px 0;
+}
+.about h2,
+.skills h2,
+.social h2 {
+  margin-bottom: 30px;
+  color: #22c55e;
+}
+
+.about-text {
+  white-space: pre-line;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+/* =========================
+   Skills  Grid
+========================= */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+.skills-grid .skill-card {
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+.skills-grid .skill-card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   Social
+========================= */
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+.social-links a {
+  color: #22c55e;
+  text-decoration: none;
+  font-weight: bold;
+}
+.social-links a:hover {
+  text-decoration: underline;
+}
+.social-links a img {
+  width: 32px;
+  height: 32px;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #374151;
+  color: #9ca3af;
+}
+
+/* =========================
+   Tablet
+========================= */
+@media (max-width: 992px) {
+  .hero .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}
+/* =========================
+   Mobile
+========================= */
+@media (max-width: 768px) {
+  .hero .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero .hero-image img {
+    width: 220px;
+    height: 220px;
+  }
+  .social-links {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
